@@ -4,13 +4,18 @@
 	let designs = import.meta.glob("/src/designs/*.svg", { eager: true });
 
 	let selected = stickers
+
+	const btnClass = "text-2xl w-full border-2 border-neutral-500 rounded p-2"
 </script>
 
 <Logo />
 
-<div class="w-full flex justify-between mb-2 text-5xl">
-	<button on:click={() => selected = stickers}>Stickers</button>
-	<button on:click={() => selected = designs}>designs</button>
+<div class="w-full flex justify-between mb-4 gap-2">
+	<button class="{btnClass} {selected === stickers ? 'bg-slate-800' : ''}"
+	on:click={() => selected = stickers}>Stickers</button>
+
+	<button class="{btnClass} {selected === designs ? 'bg-slate-800' : ''}"
+	on:click={() => selected = designs}>Designs</button>
 </div>
 
 <div class="grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-4">
