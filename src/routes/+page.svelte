@@ -1,6 +1,6 @@
 <script>
 	import Logo from '$lib/icons/Logo.svelte'
-	let stickers = import.meta.glob("/static/stickers/*.svg", { eager: true });
+	let stickers = import.meta.glob("/src/stickers/*.svg", { eager: true });
 
 </script>
 
@@ -10,6 +10,6 @@
 
 <div class="grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-4">
 	{#each Object.keys(stickers) as sticker}
-		<img src={sticker.replace("/static", "")} class="rounded xl:rounded-lg"/>
+		<img src={sticker} class="rounded xl:rounded-lg"/>
 	{/each}
 </div>
