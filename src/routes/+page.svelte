@@ -18,7 +18,7 @@
 	on:click={() => selected = designs}>Designs</button>
 </div>
 
-<div class="grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-4">
+<div class="grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-4 mb-4">
 	{#each Object.keys(selected) as sticker}
 		<img src={sticker} alt="img: {sticker}" class="rounded xl:rounded-lg aspect-square object-cover h-full w-full"/>
 	{/each}
