@@ -5,6 +5,6 @@
 
 <Header />
 
-<div class="w-[90%] xl:w-[1000px] p-2 mx-auto h-dvh">
+<div class="w-[90%] xl:w-[1000px] p-2 mx-auto h-full">
     <slot />
 </div>

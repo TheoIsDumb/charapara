@@ -1,15 +1,21 @@
 <script>
     import Logo from '$lib/icons/Logo.svelte'
+    import Github from '$lib/icons/Github.svelte'
 </script>
 
-<header>
-    <div class="h-60 bg-[#232a2d] w-full flex justify-center items-center">
+<header class="relative">
+    <div class="h-60 bg-[#232a2d] w-full flex flex-col justify-center items-center" />
+
+    <img src="/curve.svg" alt="te" class="w-full h-fit"/>
+
+
+    <div class="absolute flex flex-col gap-4 justify-center items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-dvw">
         <Logo/>
+
+        <span class="text-3xl text-blue-400">മലയാളി ഡെവ് സ്റ്റിക്കറുകൾ!</span>
+
+        <a class="text-xl bg-gradient-to-b from-blue-500 to-blue-400 text-white shadow rounded py-2 px-8 not-italic" href="#">
+            <Github />
+        </a>
     </div>
-
-    <svg class="h-fit w-full" viewBox="0 0 508 52.917" xmlns="http://www.w3.org/2000/svg">
-        <path d="m0 0v13.102c4.5612 1.2968 9.119 2.6061 13.706 3.8106 15.309 4.0072 30.743 7.5348 46.261 10.636 16.242 3.2403 32.58 6.0034 48.976 8.3514 17.789 2.5298 35.646 4.5694 53.546 6.1299 19.438 1.6945 38.921 2.837 58.423 3.4427 19.062 0.58604 38.139 0.67301 57.205 0.23668 19.317-0.42666 38.621-1.401 57.884-2.8913 18.23-1.4294 36.424-3.3221 54.548-5.7485 18.359-2.4474 36.647-5.4323 54.822-8.9943 15.579-3.0618 31.076-6.5517 46.451-10.519 5.6083-1.4508 11.134-3.1987 16.706-4.7826v-12.774z" fill="#232a2d" style="paint-order:stroke fill markers"/>
-    </svg>
 </header>
-
-

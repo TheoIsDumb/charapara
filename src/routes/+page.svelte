@@ -2,10 +2,10 @@
 	let stickers = import.meta.glob("/src/stickers/*.svg", { eager: true });
 	let designs = import.meta.glob("/src/designs/*.svg", { eager: true });
 
-	const h1class = "my-4 font-bold text-4xl"
+	const h1class = "my-4 text-4xl text-blue-400"
 </script>
 
-<h1 class={h1class}>Stickers</h1>
+<h1 class={h1class}>സ്റ്റിക്കറുകൾ</h1>
 
 <div class="grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-4 mb-4">
 	{#each Object.keys(stickers) as sticker}
@@ -13,7 +13,7 @@
 	{/each}
 </div>
 
-<h1 class={h1class}>Designs</h1>
+<h1 class={h1class}>വരപ്പ്</h1>
 
 <div class="grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-4 mb-4">
 	{#each Object.keys(designs) as design}
