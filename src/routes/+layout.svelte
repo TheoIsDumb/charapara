@@ -1,7 +1,10 @@
 <script>
     import "../app.pcss"
+	import Header from '$lib/components/Header.svelte'
 </script>
 
-<div class="w-[90%] 2xl:w-[1500px] p-2 mx-auto h-dvh">
+<Header />
+
+<div class="w-[90%] xl:w-[1000px] p-2 mx-auto h-dvh">
     <slot />
 </div>

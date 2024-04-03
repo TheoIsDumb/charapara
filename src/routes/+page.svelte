@@ -1,12 +1,9 @@
 <script>
-	import Logo from '$lib/icons/Logo.svelte'
 	let stickers = import.meta.glob("/src/stickers/*.svg", { eager: true });
 	let designs = import.meta.glob("/src/designs/*.svg", { eager: true });
 
 	const h1class = "my-4 font-bold text-4xl"
 </script>
-
-<Logo />
 
 <h1 class={h1class}>Stickers</h1>
 
