@@ -16,7 +16,8 @@
             മലയാളി ഡെവ് സ്റ്റിക്കറുകൾ!
         </span>
 
-        <a class="text-xl bg-gradient-to-b from-blue-500 to-blue-400 text-white shadow rounded py-2 px-8 not-italic" href="#">
+        <a class="text-xl bg-gradient-to-b from-blue-500 to-blue-400 text-white shadow rounded py-2 px-8 not-italic"
+        href="https://github.com/theoisdumb/charapara" target="_blank">
             <Github />
         </a>
     </div>
